@@ -34,9 +34,7 @@ This project simulates the workflow of a **Business Analyst at an e-commerce com
 
 ---
 
-## 🧠 L5 Business Analyst — Analysis Notes
-
-> The following numbered insights go beyond surface-level observations. Each finding is backed by query results, cross-validated across multiple scripts, and framed with a business recommendation — the way a senior analyst would present to a leadership team.
+## 🧠 — Analysis Notes
 
 ---
 
