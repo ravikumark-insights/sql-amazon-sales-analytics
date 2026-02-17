@@ -318,7 +318,7 @@ sql-amazon-sales-analytics/
 
 ## 👤 Author
 
-**Ravikumar K** | Data Analyst
+**Ravikumar K** | Business Analyst
 🔗 [GitHub](https://github.com/ravikumark-insights)
 
 ---
