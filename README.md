@@ -293,19 +293,6 @@ sql-amazon-sales-analytics/
 
 ---
 
-## 🚀 How to Run
-
-1. Install [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (free) and [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
-2. Clone this repo:
-   ```bash
-   git clone https://github.com/ravikumark-insights/sql-amazon-sales-analytics.git
-   ```
-3. Run scripts **in order**: `00` → `01` → `02` → ... → `07`
-4. Import `amazon.csv` from `datasets/` using the SSMS Import Wizard
-
-> **Note:** Raw prices contain `₹` stored as Unicode `NCHAR(8377)`. The data cleaning script handles this using `TRY_CAST` + `REPLACE(col, NCHAR(8377), '')`.
-
----
 
 ## 📁 Dataset
 
