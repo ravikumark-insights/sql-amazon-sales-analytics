@@ -1,7 +1,3 @@
--- ============================================================
--- File: 00_create_db_and_tables.sql
--- Purpose: Create database and base table for Amazon Sales project
--- ============================================================
 
 -- Create database (run once)
 CREATE DATABASE AmazonAnalytics;
