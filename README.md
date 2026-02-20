@@ -34,7 +34,7 @@ This project simulates the workflow of a **Business Analyst at an e-commerce com
 
 ---
 
-## 🧠 — Analysis Notes
+##  — Analysis Notes
 
 ---
 
@@ -308,4 +308,3 @@ sql-amazon-sales-analytics/
 
 ---
 
-*MIT License*
