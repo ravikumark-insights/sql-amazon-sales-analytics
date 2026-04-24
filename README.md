@@ -1,145 +1,131 @@
-🛒 Amazon Sales Analytics — Business Analyst Project (SQL + Dashboard)
+📊 Amazon Sales Analytics — Business Analyst Project
 
-End-to-end Business Analyst project demonstrating how raw e-commerce data can be transformed into actionable insights, strategic recommendations, and decision-support tools using SQL and Excel.
+SQL + Excel Dashboard | Decision-Driven Analytics
 
-📌 Business Problem
+🔍 Overview
 
-E-commerce platforms operate with large volumes of product data, but key business decisions—such as pricing strategy, discount optimization, and category investment—are often not fully data-driven.
+This project simulates a real-world Business Analyst scenario where large-scale e-commerce product data is analyzed to drive strategic business decisions around pricing, discounting, and category performance.
 
-This creates challenges such as:
+The solution combines SQL-based data transformation and analysis with an Excel dashboard, enabling stakeholders to monitor KPIs, identify inefficiencies, and make data-driven decisions.
 
+🎯 Problem Statement
+
+In large e-commerce environments, decision-making is often reactive due to:
+
+Lack of visibility into drivers of customer engagement
 Over-reliance on discounting without understanding impact
-Poor visibility into category-level performance
-Missed opportunities in underperforming segments
-Lack of clarity on what drives customer engagement
-🎯 Objective
+Poor identification of high-growth vs underperforming categories
+Difficulty translating raw data into actionable insights
 
-This project simulates the role of a Business Analyst by:
+The core problem is not lack of data — but lack of structured decision-making frameworks built on data.
 
-Analyzing product-level data to identify key performance drivers
-Evaluating relationships between price, discount, and customer ratings
-Identifying high-impact opportunities across categories
-Building a dashboard for decision-making support
-🧠 Solution Overview
-
-The solution follows a structured analytics approach:
-
+🚀 Objectives
+Identify key drivers of product performance and engagement
+Analyze relationships between price, discount, and customer perception
+Detect inefficiencies and growth opportunities
+Build a scalable decision-support system using SQL and dashboards
+🏗️ Analytical Approach
 1. Data Preparation
-Cleaned raw dataset using SQL
-Standardized pricing, discount, and rating fields
-Ensured data quality for analysis
-2. Exploratory Analysis
-Analyzed product distribution across categories
-Built baseline KPIs (price, rating, discount, reviews)
-3. Advanced Analytics
-Segmented products by:
-Price ranges
-Discount levels
-Rating bands
-Applied window functions for:
-Trend analysis
-Market concentration
-Contribution analysis
-4. Visualization
-Built an interactive Excel dashboard
-Translated SQL insights into business-friendly visuals
-Enabled filtering and comparison across segments
-📊 Key Business Insights
+Cleaned and standardized raw product data using SQL
+Converted pricing, discount, and rating fields into usable formats
+Created derived features (price segments, discount tiers, rating bands)
+2. KPI Development
+Average price, discount %, and rating
+Total reviews (engagement proxy)
+Category-level performance metrics
+3. Segmentation & Analysis
+Price Segments: Budget → Luxury
+Discount Tiers: Low → Very High
+Rating Bands: Poor → Excellent
+
+Used advanced SQL techniques:
+
+Window functions (RANK, DENSE_RANK, PERCENT_RANK)
+Cumulative contribution analysis (Pareto)
+Trend and distribution analysis
+4. Insight Generation
+
+Focused on identifying:
+
+Behavioral patterns
+Root causes
+Business implications
+5. Decision Layer
+
+Converted insights into:
+
+Business implications
+Actionable recommendations
+6. Dashboard Development
+
+Built an Excel dashboard to:
+
+Track KPIs
+Compare categories and segments
+Highlight underperformance
+Enable fast decision-making
+📈 Key Insights
 1. Market Concentration Risk
-~88% of total customer engagement is driven by just 2 categories
-Remaining categories contribute minimal activity
+Engagement is concentrated in a few categories
+Risk: Over-dependence limits growth diversification
 
-👉 Impact:
-High dependency on limited categories increases risk and limits growth diversification
+Action: Improve visibility and investment in underperforming categories
 
-2. Price Does Not Indicate Quality
-Ratings remain stable across all price ranges (~4.0–4.2)
+2. Price ≠ Perceived Quality
+Ratings remain consistent across price ranges
+Customers value experience over price
 
-👉 Impact:
-Premium pricing alone is not a reliable differentiator
+Action: Focus on product quality, reviews, and listing optimization
 
-3. Optimal Discount Range Identified
-50–70% discount range drives the highest engagement
-Discounts beyond 70% reduce perceived product quality
+3. Discount Strategy Inefficiency
+50–70% discounts maximize engagement
 
-👉 Impact:
-Helps optimize pricing and promotional strategies
+70% discounts reduce perceived quality
 
-4. Mid-Range Products Drive Engagement
-₹200–₹1,000 segment generates nearly 50% of all reviews
+Action: Optimize discounting strategy within effective range
 
-👉 Impact:
-Represents the most critical segment for growth and product launches
+4. Mid-Range Segment Dominance
+Highest engagement occurs in mid-range pricing
 
-5. Underutilized Category Opportunity
-Home & Kitchen has strong product count but low engagement
+Action: Prioritize this segment for product launches and marketing
 
-👉 Impact:
-High potential for growth through improved visibility and marketing
+5. Underutilized Categories
+Strong supply but low engagement
 
-6. “Good” Products Dominate Market Behavior
-4.0–4.5 rating range accounts for:
-Majority of products
-Majority of customer engagement
+Action: Improve discoverability and product presentation
 
-👉 Impact:
-Improving products above 4.0 rating threshold is more impactful than chasing perfection
-
-📈 Business Impact
+📊 Business Impact
 
 This project enables:
 
-Pricing Teams → Optimize discount strategies
-Category Managers → Identify high-growth segments
-Product Teams → Improve positioning and performance
-Leadership → Make data-driven strategic decisions
-📊 Dashboard (Excel)
+Pricing Optimization → Reduce discount inefficiencies
+Category Strategy → Identify growth opportunities
+Customer Insights → Understand engagement drivers
+Decision Support → Data-driven leadership decisions
+📊 Dashboard
 
-An interactive Excel dashboard was developed to:
+The Excel dashboard provides:
 
-Track key KPIs (rating, discount, product count)
-Compare category performance
-Analyze pricing and discount patterns
-Identify underperforming segments
-
-👉 The dashboard acts as a decision-support tool, not just a visualization.
-
-🗂️ Project Structure
-sql-amazon-sales-analytics/
-│
-├── datasets/
-│   └── amazon_sales.csv
-│
-├── scripts/
-│   ├── 00_create_db_and_tables.sql
-│   ├── 01_database_exploration.sql
-│   ├── 02_measures_and_metrics.sql
-│   ├── 03_product_performance.sql
-│   ├── 04_sales_trends.sql
-│   ├── 05_cumulative_analytics.sql
-│   ├── 06_segmentation.sql
-│   └── 07_part_to_whole.sql
-│
-├── dashboard/
-│   └── Amazon_Dashboard.xlsx
-│
-├── docs/
-│   └── data_dictionary.md
-│
-└── README.md
-🛠️ Technical Skills Demonstrated
-SQL (T-SQL)
+KPI tracking
+Segment-level insights
+Performance gap identification
+Interactive decision support
+⚙️ Tech Stack
+SQL Server (SSMS)
+Excel (Power Query, Pivot Tables, Dashboarding)
+🔧 Scalability & Future Enhancements
+Automate pipeline using SQL + ETL tools
+Integrate with Power BI for real-time dashboards
+Add forecasting models
+Expand dataset with revenue & sales metrics
+💡 Skills Demonstrated
+Advanced SQL (Window Functions, Aggregations)
 Data Cleaning & Transformation
-Aggregations & KPI Development
-Window Functions
-Segmentation & Trend Analysis
+KPI Development
+Segmentation & Analysis
 Business Insight Generation
-Excel Dashboarding
-📁 Dataset
-Source: Kaggle — Amazon Sales Dataset
-Size: 1,465 products
-Categories: 9
-Currency: Indian Rupees (₹)
+Dashboard Development
+Strategic Thinking
 👤 Author
 
 Ravi Kumar
